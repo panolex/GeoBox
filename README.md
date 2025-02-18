@@ -16,8 +16,8 @@ geofeed maintenance and to keep netbox as a source of truth for IP data.
   pip3 install -r requirements.txt
   ```
 - Open your netbox installation, go to the customization tab and import the following files (in order):
-    - **Custom Field Choices(Country):** [choices.json](fields/geoloc_country.json)
-    - **Custom Field Choices(Regions):** [choices.json](fields/geoloc_region.json)
+    - **Custom Field Choices(Country):** [geoloc_country.json](fields/geoloc_country.json)
+    - **Custom Field Choices(Regions):** [geoloc_region.json](fields/geoloc_region.json)
     - **Custom Fields:** [fields.json](fields/custom_fields.json)
   > [!NOTE]
   > Importing these files is currently broken due to a bug in netbox. This should be fixed in the next release. For now,
