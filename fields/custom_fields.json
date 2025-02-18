@@ -1,0 +1,206 @@
+[
+  {
+    "display": "Has Geolocation",
+    "object_types": [
+      "ipam.prefix"
+    ],
+    "type": {
+      "value": "boolean",
+      "label": "Boolean (true/false)"
+    },
+    "related_object_type": null,
+    "data_type": "boolean",
+    "name": "geoloc_has_location",
+    "label": "Has Geolocation",
+    "group_name": "Geolocation",
+    "description": "When this option is disabled, the prefix will be explicitly flagged as not having a geolocation. To inherit the location from the parent prefix, leave this enabled and leave the other fields blank.",
+    "required": true,
+    "unique": false,
+    "search_weight": 1000,
+    "filter_logic": {
+      "value": "loose",
+      "label": "Loose"
+    },
+    "ui_visible": {
+      "value": "always",
+      "label": "Always"
+    },
+    "ui_editable": {
+      "value": "yes",
+      "label": "Yes"
+    },
+    "is_cloneable": false,
+    "default": false,
+    "related_object_filter": null,
+    "weight": 10,
+    "validation_minimum": null,
+    "validation_maximum": null,
+    "validation_regex": "",
+    "choice_set": null,
+    "comments": "",
+  },
+  {
+    "display": "Country",
+    "object_types": [
+      "ipam.prefix"
+    ],
+    "type": {
+      "value": "select",
+      "label": "Selection"
+    },
+    "related_object_type": null,
+    "data_type": "string",
+    "name": "geoloc_country",
+    "label": "Country",
+    "group_name": "Geolocation",
+    "description": "",
+    "required": false,
+    "unique": false,
+    "search_weight": 1000,
+    "filter_logic": {
+      "value": "loose",
+      "label": "Loose"
+    },
+    "ui_visible": {
+      "value": "always",
+      "label": "Always"
+    },
+    "ui_editable": {
+      "value": "yes",
+      "label": "Yes"
+    },
+    "is_cloneable": false,
+    "default": null,
+    "related_object_filter": null,
+    "weight": 20,
+    "validation_minimum": null,
+    "validation_maximum": null,
+    "validation_regex": "",
+    "choice_set": {
+      "name": "geoloc_country",
+    },
+    "comments": "",
+  },
+  {
+    "display": "Region",
+    "object_types": [
+      "ipam.prefix"
+    ],
+    "type": {
+      "value": "select",
+      "label": "Selection"
+    },
+    "related_object_type": null,
+    "data_type": "string",
+    "name": "geoloc_region",
+    "label": "Region",
+    "group_name": "Geolocation",
+    "description": "",
+    "required": false,
+    "unique": false,
+    "search_weight": 1000,
+    "filter_logic": {
+      "value": "loose",
+      "label": "Loose"
+    },
+    "ui_visible": {
+      "value": "always",
+      "label": "Always"
+    },
+    "ui_editable": {
+      "value": "yes",
+      "label": "Yes"
+    },
+    "is_cloneable": false,
+    "default": null,
+    "related_object_filter": null,
+    "weight": 30,
+    "validation_minimum": null,
+    "validation_maximum": null,
+    "validation_regex": "",
+    "choice_set": {
+      "name": "geoloc_region",
+    },
+    "comments": "",
+  },
+  {
+    "display": "City",
+    "object_types": [
+      "ipam.prefix"
+    ],
+    "type": {
+      "value": "text",
+      "label": "Text"
+    },
+    "related_object_type": null,
+    "data_type": "string",
+    "name": "geoloc_city",
+    "label": "City",
+    "group_name": "Geolocation",
+    "description": "",
+    "required": false,
+    "unique": false,
+    "search_weight": 1000,
+    "filter_logic": {
+      "value": "loose",
+      "label": "Loose"
+    },
+    "ui_visible": {
+      "value": "always",
+      "label": "Always"
+    },
+    "ui_editable": {
+      "value": "yes",
+      "label": "Yes"
+    },
+    "is_cloneable": false,
+    "default": null,
+    "related_object_filter": null,
+    "weight": 40,
+    "validation_minimum": null,
+    "validation_maximum": null,
+    "validation_regex": "",
+    "choice_set": null,
+    "comments": "",
+  },
+  {
+    "display": "Postal Code",
+    "object_types": [
+      "ipam.prefix"
+    ],
+    "type": {
+      "value": "text",
+      "label": "Text"
+    },
+    "related_object_type": null,
+    "data_type": "string",
+    "name": "geoloc_postal_code",
+    "label": "Postal Code",
+    "group_name": "Geolocation",
+    "description": "",
+    "required": false,
+    "unique": false,
+    "search_weight": 1000,
+    "filter_logic": {
+      "value": "loose",
+      "label": "Loose"
+    },
+    "ui_visible": {
+      "value": "always",
+      "label": "Always"
+    },
+    "ui_editable": {
+      "value": "yes",
+      "label": "Yes"
+    },
+    "is_cloneable": false,
+    "default": null,
+    "related_object_filter": null,
+    "weight": 50,
+    "validation_minimum": null,
+    "validation_maximum": null,
+    "validation_regex": "",
+    "choice_set": null,
+    "comments": "",
+  }
+]

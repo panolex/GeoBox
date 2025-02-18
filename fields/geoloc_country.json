@@ -1,0 +1,11 @@
+{
+  "display": "geoloc_country",
+  "name": "geoloc_country",
+  "description": "ISO 3166-1",
+  "base_choices": {
+    "value": "ISO_3166",
+    "label": "ISO 3166 (Country codes)"
+  },
+  "extra_choices": [],
+  "order_alphabetically": true
+}
