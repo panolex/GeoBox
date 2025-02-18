@@ -38,13 +38,15 @@ print('Found a total of ' + str(len(prefixes)) + ' prefixes')
 
 print('Building geofeed')
 i = 0
-feed = '# Generated with GeoBox (https://github.com/FrumentumNL/GeoBox) on ' + datetime.now().isoformat() + '\n'
+feed = '# Generated with GeoBox (https://github.com/FrumentumNL/GeoBox fork:https://github.com/panolex/GeoBox) on ' + datetime.now().isoformat() + '\n'
+feed += '#ip_network,iso_country_code,iso_region_code,city_name,postal_code' + '\n'
 for entry in prefixes:
     fields = entry['custom_fields']
     if fields['geoloc_has_location'] == True:
         country = fields['geoloc_country']
         region = fields['geoloc_region']
         city = fields['geoloc_city']
+        postal_code = fields['geoloc_postal_code']
         if country is None and region is None and city is None:
             # Just let it inherit
             continue
@@ -52,8 +54,9 @@ for entry in prefixes:
         country = '' if country is None else country
         region = '' if region is None else region
         city = '' if city is None else city
+        postal_code = '' if postal_code is None else postal_code
     
-        feed += entry['prefix'] + ',' + country + ',' + region + ',' + city + ',\n'
+        feed += entry['prefix'] + ',' + country + ',' + region + ',' + city + ',' + postal_code + '\n'
         i += 1
         
     elif fields['geoloc_has_location'] == None:
