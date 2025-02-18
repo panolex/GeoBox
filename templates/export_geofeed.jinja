@@ -1,0 +1,2 @@
+#ip_network,iso_country_code,iso_region_code,city_name,postal_code{% for p in queryset %}{% if p.cf.geoloc_has_location is true %}
+{{p.prefix}},{{p.cf.geoloc_country}},{{p.cf.geoloc_region}},{{p.cf.geoloc_city}},{{p.cf.geoloc_postal_code}}{% endif %}{% endfor %}
